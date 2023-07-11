@@ -10,15 +10,39 @@ Current features:
 
 -Special characters
 
-Future features:
+https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/881112ef-4f91-41e0-a55f-ad7913e03699
+
+# Password generator V2
+The second version of my password generator makes use of a grid instead of ".pack" in Tkinter.
+
+Current features:
+
+Same features as V1 +
+
+-Save passwords to file (file is auto created)
+
+-Copy to clipboard
 
 -Password history
 
--Save to file option
+-Fancier (Password is re-generated each time the length slider moves)
 
-https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/881112ef-4f91-41e0-a55f-ad7913e03699
+Requirements:
+1. Firstly ensure that "PIP" is installed on your machine. Open command prompt and type "pip"
+```
+pip
+```
+If it is not then refer to https://builtin.com/software-engineering-perspectives/pip-command-not-found
 
-# Password guesser meme V1
+2. Install pyperclip. Open command prompt and type:
+```
+pip install pyperclip
+```
+
+
+https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/2118173f-beec-46d0-a4f3-bbc86db40aee
+
+# Password guesser meme
 
 The first script I wrote with Tkinter
 
@@ -26,7 +50,7 @@ It makes use of labels, check boxes, text boxes, buttons and message boxes
 
 https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/712e37ef-4dfc-4725-8b1d-18986b893b9f
 
-# Weather app V1
+# Simple weather app
 
 This script requires the installation of the PyOWM library as well as a PyOWM API key.
 
@@ -36,7 +60,7 @@ pip
 ```
 If it is not then refer to https://builtin.com/software-engineering-perspectives/pip-command-not-found
 
-2. Instal PyOWM. Open command prompt and type:
+2. Install PyOWM. Open command prompt and type:
 ```
 pip install pyowm
 ```
