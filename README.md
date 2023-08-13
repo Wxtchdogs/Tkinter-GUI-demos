@@ -27,7 +27,10 @@ Same features as V1 +
 
 -Fancier (Password is re-generated each time the length slider moves)
 
-Requirements:
+### Password generator V2.1
+-V2.1 ensures that no empty passwords can be saved + general bug fixes
+
+### Requirements:
 1. Firstly ensure that "PIP" is installed on your machine. Open command prompt and type "pip"
 ```
 pip
