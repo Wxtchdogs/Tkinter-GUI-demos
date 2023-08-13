@@ -22,7 +22,7 @@ class GUI:
 
         self.window = tk.Tk()
         self.window.geometry("700x400")
-        self.window.title("Password generator v2")
+        self.window.title("Password generator v2.1")
 
         #Specify grid layout (2x7)
         Grid.rowconfigure(self.window,0,weight=1)
@@ -40,7 +40,7 @@ class GUI:
         self.checkstate2 = tk.IntVar()
 
         #Column 1
-        self.label = tk.Label(self.window, text="Password generator v2", font= ('Arial, 18'))
+        self.label = tk.Label(self.window, text="Password generator v2.1", font= ('Arial, 18'))
         self.horizontal = Scale(self.window, from_=1, to=30, orient=HORIZONTAL, command=self.fix)
         self.capitals = tk.Checkbutton(self.window, text="Capital letters", variable = self.checkstate1)
         self.specials = tk.Checkbutton(self.window, text="Special characters", variable = self.checkstate2)
