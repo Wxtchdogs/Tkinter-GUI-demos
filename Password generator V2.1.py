@@ -22,7 +22,7 @@ class GUI:
 
         self.window = tk.Tk()
         self.window.geometry("700x400")
-        self.window.title("Password generator v2.1")
+        self.window.title("Password generator v2")
 
         #Specify grid layout (2x7)
         Grid.rowconfigure(self.window,0,weight=1)
@@ -100,12 +100,12 @@ class GUI:
     def save1(self): 
         #Ensure that password variable isn't empty with try/except
         try:
+            #Add password to words
+            words.insert(0, password)
             #Ensure password isn't already in passlist
             if passList[0] != password:    
                 #Add to the passlist
                 self.history()
-                #Add to words
-                words.insert(0, password)
         except:
             pass
 
