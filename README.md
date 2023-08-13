@@ -21,7 +21,7 @@ Same features as V1 +
 * Empty passwords aren't saved
 * Duplicate passwords aren't saved
 * General bug fixes and clean up of code
-### Requirements:
+### If copy to clipboard does not work then follow these steps:
 1. Firstly ensure that "PIP" is installed on your machine. Open command prompt and type "pip"
 ```
 pip
