@@ -3,33 +3,24 @@ This repository demonstrates the use of Tkinter to make GUI's within python
 
 # Password generator V1
 Current features:
-
--Password length
-
--Upper and lower case characters
-
--Special characters
+* Password length
+* Upper and lower case characters
+* Special characters
 
 https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/881112ef-4f91-41e0-a55f-ad7913e03699
-
 # Password generator V2
-The second version of my password generator makes use of a grid instead of ".pack" in Tkinter.
+The second version of my password generator makes use of a grid instead of .pack in Tkinter.
 
-Current features:
-
+### Current features:
 Same features as V1 +
-
--Save passwords to file (file is auto created)
-
--Copy to clipboard
-
--Password history
-
--Fancier (Password is re-generated each time the length slider moves)
-
+* Save passwords to file (file is auto created)
+* Copy to clipboard
+* Password history
+* Fancier (Password is re-generated each time the length slider moves)
 ### Password generator V2.1
--V2.1 ensures that no empty passwords can be saved + general bug fixes
-
+* Empty passwords aren't saved
+* Duplicate passwords aren't saved
+* General bug fixes and clean up of code
 ### Requirements:
 1. Firstly ensure that "PIP" is installed on your machine. Open command prompt and type "pip"
 ```
@@ -42,14 +33,13 @@ If it is not then refer to https://builtin.com/software-engineering-perspectives
 pip install pyperclip
 ```
 
-
 https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/2118173f-beec-46d0-a4f3-bbc86db40aee
 
+![Password flowchart](https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/daf47765-98d8-4db0-9d71-bdbf7cde493d)
+
 # Password guesser meme
-
-The first script I wrote with Tkinter
-
-It makes use of labels, check boxes, text boxes, buttons and message boxes
+* The first script I wrote with Tkinter
+* It makes use of labels, check boxes, text boxes, buttons and message boxes
 
 https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/712e37ef-4dfc-4725-8b1d-18986b893b9f
 
