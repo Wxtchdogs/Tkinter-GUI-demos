@@ -5,11 +5,17 @@ import random
 from tkinter import messagebox
 import pyperclip
 
+#Words stores all saved passwords including existing saved passwords
+#Passlist stores the 3 most recent passwords
+#Passwords will only be added to words if they arent empty and don't already exist
+#Passwords will only be added to Passlist if they arent empty and don't already exist
+#Passwords from passlist will also only be added to words if they arent empty and don't already exist
+
 class GUI:   
     def __init__(self):
         global passList
         #Placeholder dots which can be used for validation
-        passList = [".",".","."]
+        passList = ["","",""]
         
         #Read everything in the passwords file (Or create one if doesnt exist)
         self.read()
@@ -67,14 +73,14 @@ class GUI:
         self.generate()
 
     def clipboard(self):
-        #Check if pyperclip is installed
+        #Check if pyperclip is installed and if password is empty
         try:
             pyperclip.copy(password)
         except NameError:
             pass
         except:
             messagebox.showinfo(title = "Error", message="Pyperclip is not installed! At the command prompt type: pip install pyperclip")
-        else:
+        finally:
             if password != passList[0]:
                 self.history()
 
@@ -92,10 +98,13 @@ class GUI:
 
     #Save only 1 password
     def save1(self): 
-        #Ensure that password variable isn't empty
+        #Ensure that password variable isn't empty with try/except
         try:
+            #Ensure password isn't already in passlist
             if passList[0] != password:    
+                #Add to the passlist
                 self.history()
+                #Add to words
                 words.insert(0, password)
         except:
             pass
@@ -108,11 +117,13 @@ class GUI:
 
     #Save all recent passwords
     def save2(self): 
-        filew = open("Password history.txt", 'w')
         for item in passList[::-1]:
-            if item != "." and item not in words:
+            #Esnure items in passlist aren't empty and aren't in words already
+            if item and item not in words:
+                #Add to words
                 words.insert(0, item)
 
+        filew = open("Password history.txt", 'w')
         for item in words:
             filew.write(item + "\n")
         filew.close()
