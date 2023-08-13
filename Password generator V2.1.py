@@ -80,7 +80,7 @@ class GUI:
             pass
         except:
             messagebox.showinfo(title = "Error", message="Pyperclip is not installed! At the command prompt type: pip install pyperclip")
-        finally:
+        else:
             if password != passList[0]:
                 self.history()
 
