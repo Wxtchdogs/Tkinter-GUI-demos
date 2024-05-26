@@ -73,4 +73,4 @@ Future features:
 * Input sanitization
 * Better insights
 
-https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/2a99e4a1-70c6-4d51-b2ea-3a393ef0e59c
+https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/083c3d2e-8bba-4c96-aab7-c1903338530c
