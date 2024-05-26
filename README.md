@@ -63,3 +63,12 @@ pip install pyowm
 4. Go to line 37 of the script and replace 'ENTER_PYOWM_API_KEY_HERE' with your API key.
 
 https://github.com/Wxtchdogs/Tkinter-GUI-demos/assets/126230440/6aae3e36-11ef-4135-92b9-55cac1319fd2
+
+# Mortgage calculator V1.2
+Current features:
+* Generate weekly payments needed
+* Nice looking GUI
+
+Future features:
+* Input sanitization
+* Better insights
